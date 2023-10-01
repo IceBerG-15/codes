@@ -1,0 +1,99 @@
+body{
+    background-color: #F3EFE0;
+}
+
+img{
+    height: 275px;
+}
+
+h1{
+    color: #553939;
+}
+
+h3{
+    font-style: oblique;
+    font-size: x-large;
+    color: #553939;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 7px;
+    width: 5%;
+    
+}
+
+a{
+    color: #22A39F;
+}
+
+a:hover{
+    color: #301806;
+}
+
+p{
+    font-size: large;
+}
+
+.certificates{
+    padding: 0.5em; 
+    padding-left: 15em; 
+}
+
+.top-container{
+    margin: auto 20%;
+}
+
+.graduation-hat{
+    float: right;
+    width: 15%;
+}
+
+
+.btn {
+    position: relative;
+    left: 45%;
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4,  #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4,  #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.bottom-container{
+    background-color: #1b4d59;
+    margin-top: 40px;
+    padding-top: 30px;
+    
+}
+
+.developer{
+    color: #EAF6F6;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    position: relative;
+    left: 40%;
+}

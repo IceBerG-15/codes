@@ -1,0 +1,10 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.analysis.typeCheckingMode": "off",
+    "java.debug.settings.onBuildFailureProceed": true,
+    "files.associations": {
+        "model": "json",
+        "cmath": "c"
+    }
+}
