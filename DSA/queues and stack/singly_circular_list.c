@@ -73,7 +73,7 @@ void insert_at_begin(int x)
     {
         newNode->next=head;
         ptr=head;
-        while(ptr->next!=head)
+        while(ptr->next!=head) // traversing to last node
             ptr=ptr->next;
         ptr->next=newNode;
         head=newNode;
@@ -81,7 +81,7 @@ void insert_at_begin(int x)
 }
 void insert_at_end(int x)
 {
-    if(head==NULL)
+    if(head==NULL) // insertion at beginning case
         insert_at_begin(x);
     else
     {
@@ -89,14 +89,14 @@ void insert_at_end(int x)
         newNode->data=x;
         newNode->next=head;
         ptr=head;
-        while(ptr->next!=head)
+        while(ptr->next!=head)  // traversing to last node
             ptr=ptr->next;
         ptr->next=newNode;
     }
 }
 void insert_after_node(int x)
 {
-    if(head==NULL)
+    if(head==NULL) // insertion at beginning case
         insert_at_begin(x);
     else
     {
@@ -106,7 +106,7 @@ void insert_after_node(int x)
         struct node* newNode = (struct node*)malloc(sizeof(struct node));
         newNode->data=x;
         ptr=head;
-        while(ptr->data!=after_data)
+        while(ptr->data!=after_data) // looping till we find the node which have the given data
             ptr=ptr->next;
         newNode->next=ptr->next;
         ptr->next=newNode;
@@ -116,7 +116,7 @@ void pop()
 {
     if(head==NULL)
         display();
-    else if(head->next==head)
+    else if(head->next==head) // if only one element if present in the list
     {
         temp=head;
         head=NULL;
@@ -127,7 +127,7 @@ void pop()
         int x;
         printf("\nenter node data which u want to delete: ");
         scanf("%d",&x);
-        if(head->data==x)
+        if(head->data==x) // if we want to delete the head node
         {
             ptr=head;
             while(ptr->next!=head)
@@ -137,10 +137,10 @@ void pop()
             head=head->next;
             free(temp);
         }
-        else
+        else   
         {
             ptr=head;
-            while(ptr->next->data!=x)
+            while(ptr->next->data!=x) // finding the previous node of the node which we want to delete.
                 ptr=ptr->next;
             temp=ptr->next;
             ptr->next=temp->next;
@@ -162,6 +162,6 @@ void display()
             printf("\t%d",ptr->data);
             ptr=ptr->next;
         }
-        printf("\t%d",ptr->data);
+        printf("\t%d",ptr->data); // for printing the last node of the list
     }
 }
