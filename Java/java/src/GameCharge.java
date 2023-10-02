@@ -1,7 +1,5 @@
 //question-8
-
 import java.util.*;
-
 class GameCharge
 {
 	String name;

@@ -1,5 +1,3 @@
-//question-9
-
 import java.util.*;
 
 class Account
@@ -55,11 +53,11 @@ class CurrentAccount extends Account
 		super(name,AcNumber,Balance);
 		this.fee=fee;
 	}
-	void withdraw(int withdrawAmt)
+	void withdraw(float withdrawAmt)
 	{
 		Balance-=withdrawAmt-fee;
 	}
-	void deposit(int depositAmt)
+	void deposit(float depositAmt)
 	{
 		Balance+=depositAmt-fee;
 	}
@@ -80,14 +78,13 @@ class AccountMain
 		float rate=sc.nextFloat();
 		System.out.println("enter fee");
 		double fee=sc.nextDouble();
-		System.out.println("enter depositAmt");
-		int dep=sc.nextInt();
-		System.out.println("enter withdrawAmt");
-		int with=sc.nextInt();
-		
 		CurrentAccount ca=new CurrentAccount(name,num,bal,fee);
+		System.out.println("enter depositAmt");
+		float dep=sc.nextFloat();
 		ca.deposit(dep);
 		ca.balanceInquiry();
+		System.out.println("enter withdrawAmt");
+		float with=sc.nextFloat();
 		ca.withdraw(with);
 		ca.balanceInquiry();
 	}
