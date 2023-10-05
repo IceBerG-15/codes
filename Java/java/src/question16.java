@@ -4,23 +4,6 @@ class product
 {
     String s;
     boolean valueset = false;
-    synchronized void get()
-    {
-        while(!valueset)
-        {
-            try 
-            {
-                wait();
-            } 
-            catch (Exception e) 
-            {
-                System.out.println(e);
-            }
-        }
-        System.out.println("got "+s);
-        valueset=false;
-        notify();
-    }
     synchronized void put(String n)
     {
         while(valueset)
@@ -37,6 +20,23 @@ class product
         this.s=n;
         valueset=true;
         System.out.println("put "+s);
+        notify();
+    }
+    synchronized void get()
+    {
+        while(!valueset)
+        {
+            try 
+            {
+                wait();
+            } 
+            catch (Exception e) 
+            {
+                System.out.println(e);
+            }
+        }
+        System.out.println("got "+s);
+        valueset=false;
         notify();
     }
 }
