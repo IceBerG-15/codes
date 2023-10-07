@@ -1,84 +1,72 @@
-import java.util.Scanner;
+import java.util.*;
 
-class product
-{
-    String s;
-    boolean valueset = false;
-    synchronized void put(String n)
-    {
-        while(valueset)
-        {
-            try
-            {
-                wait();
-            }
-            catch (Exception e)
-            {
-                System.out.println(e);
-            }
-        }
-        this.s=n;
-        valueset=true;
-        System.out.println("put "+s);
-        notify();
+class Producer implements Runnable {
+    private Queue<String> Buff;
+    private Object lock;
+    
+    public Producer(Queue<String> Buff, Object lock) {
+        this.Buff = Buff;
+        this.lock = lock;
     }
-    synchronized void get()
-    {
-        while(!valueset)
-        {
-            try 
-            {
-                wait();
-            } 
-            catch (Exception e) 
-            {
-                System.out.println(e);
+    
+    public void run() {
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        
+        do {
+            System.out.print("Enter a string (or 'Stop' to exit): ");
+            input = scanner.nextLine();
+            
+            synchronized (lock) {
+                Buff.offer(input);
+                lock.notify();
             }
-        }
-        System.out.println("got "+s);
-        valueset=false;
-        notify();
+            
+        } while (!input.equals("Stop"));
+        
+        scanner.close();
     }
 }
 
-class producer extends Thread
-{
-    product p;
-    producer(product p)
-    {
-        this.p=p;
-        new Thread(this, "Producer").start();
+class Consumer implements Runnable {
+    private Queue<String> Buff;
+    private Object lock;
+    
+    public Consumer(Queue<String> Buff, Object lock) {
+        this.Buff = Buff;
+        this.lock = lock;
     }
-    public void run()
-    {
-        Scanner sc=new Scanner(System.in);
-        String string=new String("new");
-        while(!string.equals("stop"))
-        {
-            System.out.println("enter string (enter 'stop' to stop): ");
-            string=sc.next();
-            p.put(string);
+    public void run() {
+        while (true) {
+            synchronized (lock) {
+                while (Buff.isEmpty()) {
+                    try {
+                        lock.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                
+                String data = Buff.poll();
+                System.out.println("Consumed: " + data);
+                
+                if (data.equals("Stop")) {
+                    break;
+                }
+            }
         }
     }
 }
 
-class consumer implements Runnable
-{
-    product p;
-    consumer(product p)
-    {
-        this.p=p;
-        new Thread(this, "Consumer").start();
-    }
-    public void run()
-    {
-        p.get();
-    }
-}
-class question16 {
+public class question16 {
     public static void main(String[] args) {
-        product p = new product();
-        new producer(p);
-        new consumer(p);
+        Queue<String> Buff = new LinkedList<>();
+        Object lock = new Object();
+        
+        Thread producer = new Thread(new Producer(Buff, lock));
+        Thread consumer = new Thread(new Consumer(Buff, lock));
+        
+        producer.start();
+        consumer.start();
     }
 }
