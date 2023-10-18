@@ -6,5 +6,10 @@
     "files.associations": {
         "model": "json",
         "cmath": "c"
-    }
+    },
+    "java.project.sourcePaths": [
+        "JavaFX/demo/src/example",
+        "Java/java/src",
+        "hellofx/src/main/java/org/openjfx"
+    ]
 }

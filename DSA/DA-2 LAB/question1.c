@@ -1,3 +1,4 @@
+// polynomial substraction...
 #include <stdio.h>
 #include <stdlib.h>
 

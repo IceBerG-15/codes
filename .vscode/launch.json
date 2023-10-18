@@ -1,0 +1,224 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Q15",
+            "request": "launch",
+            "mainClass": "Q15",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "TestJavaFXRun0",
+            "request": "launch",
+            "mainClass": "TestJavaFXRun0",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AccountMain",
+            "request": "launch",
+            "mainClass": "AccountMain",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "GameCharge",
+            "request": "launch",
+            "mainClass": "GameCharge",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "Overload",
+            "request": "launch",
+            "mainClass": "Overload",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "ThreeDimensionalShapeMain",
+            "request": "launch",
+            "mainClass": "ThreeDimensionalShapeMain",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "arraylist",
+            "request": "launch",
+            "mainClass": "arraylist",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "avg",
+            "request": "launch",
+            "mainClass": "avg",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "calculator",
+            "request": "launch",
+            "mainClass": "calculator",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "catpractice1",
+            "request": "launch",
+            "mainClass": "catpractice1",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "catpractice2",
+            "request": "launch",
+            "mainClass": "catpractice2",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "catpractice3",
+            "request": "launch",
+            "mainClass": "catpractice3",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "catpractice4",
+            "request": "launch",
+            "mainClass": "catpractice4",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "command_line",
+            "request": "launch",
+            "mainClass": "command_line",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "hypotenuse",
+            "request": "launch",
+            "mainClass": "hypotenuse",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "name_gui",
+            "request": "launch",
+            "mainClass": "name_gui",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "occurence",
+            "request": "launch",
+            "mainClass": "occurence",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "pat",
+            "request": "launch",
+            "mainClass": "pat",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "pattern",
+            "request": "launch",
+            "mainClass": "pattern",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "question11",
+            "request": "launch",
+            "mainClass": "question11",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "question12",
+            "request": "launch",
+            "mainClass": "question12",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "question13",
+            "request": "launch",
+            "mainClass": "question13",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "question14",
+            "request": "launch",
+            "mainClass": "question14",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "question15",
+            "request": "launch",
+            "mainClass": "question15",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "question16",
+            "request": "launch",
+            "mainClass": "question16",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "question17",
+            "request": "launch",
+            "mainClass": "question17",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "sumofarrayMain",
+            "request": "launch",
+            "mainClass": "sumofarrayMain",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "threadspractice1",
+            "request": "launch",
+            "mainClass": "threadspractice1",
+            "projectName": "codes_5fdb9a35"
+        }
+    ]
+}
