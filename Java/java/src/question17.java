@@ -59,8 +59,7 @@ class question17
         n=sc.nextInt();
         FileOutputStream fos = new FileOutputStream(file);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
-        organDonorRegistration donor;
-        ArrayList<organDonorRegistration> donorlist = new ArrayList<>();
+        organDonorRegistration[] donorlist = new organDonorRegistration[n];
         for(int i=0; i<n;i++)
         {
             System.out.println("Name: ");
@@ -76,8 +75,7 @@ class question17
             sc.nextLine();
             System.out.println("Address: ");
             address=sc.nextLine();
-            donor = new organDonorRegistration(name,age, address, contact,blood_group,organ);
-            donorlist.add(i, donor);
+            donorlist[i] = new organDonorRegistration(name,age, address, contact,blood_group,organ);
         }
         oos.writeObject(donorlist);
         oos.close();
@@ -85,9 +83,13 @@ class question17
         
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
-        donorlist = (ArrayList<organDonorRegistration>)ois.readObject() ;
         for(organDonorRegistration o : donorlist)
-            o.display();
+        {
+            if(o.age>=18 && o.blood_group.equals("b+") && o.organ.equals("kidney"))
+                System.out.println("Eligible. Thank you.");
+            else
+                System.out.println("Not Eligible. Thank you.");
+        }
         fis.close();
         ois.close();
     }

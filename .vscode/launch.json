@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringSearchClient",
+            "request": "launch",
+            "mainClass": "question33.StringSearchClient",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "StringSearchServer",
+            "request": "launch",
+            "mainClass": "question33.StringSearchServer",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "client",
+            "request": "launch",
+            "mainClass": "question32.client",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "server",
+            "request": "launch",
+            "mainClass": "question32.server",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "client",
+            "request": "launch",
+            "mainClass": "question31.client",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "server",
+            "request": "launch",
+            "mainClass": "question31.server",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
             "name": "Q15",
             "request": "launch",
             "mainClass": "Q15",
