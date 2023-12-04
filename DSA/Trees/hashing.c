@@ -24,7 +24,7 @@ void count()
 // insertion in the table
 void insert()
 {
-    int key,index,i,flag=0,hkey;
+    int key,index,i,hkey;
     printf("\nenter a value to insert into hash table\n");
     scanf("%d",&key);
     hkey=key%TABLE_SIZE;

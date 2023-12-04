@@ -23,7 +23,6 @@ int main()
 
 void insertion_sort(int a[],int n)
 {
-    int temp;
     int key;
     int j;
     for(int i=1;i<n;i++)
