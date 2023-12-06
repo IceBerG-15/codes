@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "set3_2",
+            "request": "launch",
+            "mainClass": "practice.set3_2",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "set3_1",
+            "request": "launch",
+            "mainClass": "practice.set3_1",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "set2_1",
+            "request": "launch",
+            "mainClass": "practice.set2_1",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "set1_2",
+            "request": "launch",
+            "mainClass": "practice.set1_2",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "set1_1",
+            "request": "launch",
+            "mainClass": "practice.set1_1",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "ude",
+            "request": "launch",
+            "mainClass": "practice.ude",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
             "name": "StringSearchClient",
             "request": "launch",
             "mainClass": "question33.StringSearchClient",
