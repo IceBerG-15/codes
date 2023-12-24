@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "client",
+            "request": "launch",
+            "mainClass": "tcp_1.client",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
+            "name": "server",
+            "request": "launch",
+            "mainClass": "tcp_1.server",
+            "projectName": "codes_5fdb9a35"
+        },
+        {
+            "type": "java",
             "name": "set3_2",
             "request": "launch",
             "mainClass": "practice.set3_2",
